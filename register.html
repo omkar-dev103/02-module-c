@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Gujarat – Drive the Future | Government of Gujarat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        :root {
+            --primary: #15803d;
+            --secondary: #0ea5e9;
+            --background: #f0fdf4;
+        }
+        body {
+            font-family: 'Public Sans', sans-serif;
+            background-color: var(--background);
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Outfit', sans-serif;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        @media(max-width:608px){
+  nav ul{
+    position:absolute;
+    top:70px;
+    right:-100%;
+    flex-direction:column;
+    background:white;
+    width:200px;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:.3s;
+  }
+
+  nav ul.active{
+    right:10%;
+  }
+
+  .menu-toggle{
+    display:block;
+  }
+}
+
+input,
+label {
+  margin: 0.4rem 0 !important;
+  border-color: black !important;
+  color: black !important;
+}
+
+    </style>
+</head>
+<body class="text-slate-900">
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 glass border-b border-green-100">
+        <div class="container mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="bg-green-600 p-2 rounded-xl shadow-lg shadow-green-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <div>
+                    <span class="block text-xl font-bold tracking-tight">EV Gujarat</span>
+                    <span class="block text-[10px] uppercase tracking-[0.2em] font-semibold text-green-700">Drive the Future</span>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center gap-8 font-medium text-slate-600">
+                <a href="index.html" class="hover:text-green-600 transition-colors">Home</a>
+                <a href="#index.html" class="hover:text-green-600 transition-colors">Subsidies</a>
+                <a href="#index.html" class="hover:text-green-600 transition-colors">Charging</a>
+                <a href="#index.html" class="hover:text-green-600 transition-colors">Benefits</a>
+                <button class="bg-green-600 text-white px-6 py-2.5 rounded-full font-bold shadow-xl shadow-green-200 hover:bg-green-700 transition-all active:scale-95"> <a href="#">Register EV</a></button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Form Title -->
+    <section id="benefits" class="py-32 bg-white">
+          <div class="container mx-auto px-6 text-center mb-20">
+            <hr>
+           <h2 class="text-3xl md:text-5xl font-extrabold leading-[0.9] mb-8 tracking-tighter">Registration Form</h2>
+            <p class="text-slate-500 text-lg">🌱Fill The Details and Submit.🌱</p>
+            <br>
+
+
+            <div class="container mx-auto px-6 text-center mb-20">
+            <form>
+                  <h4 class="text-xl font-bold text-slate-400 mb-6 uppercase tracking-widest">Fisrt Name: <input type="text" placeholder="Enter Your First Name">
+                <br><br>
+                 Last Name: <input type="text" placeholder="Enter Your Last Name">
+                <br><br>
+                 Email:<input type="email" placeholder="Enter Your Email">
+                <br><br>
+                  City: <input type="text" placeholder="City">
+                <br><br>
+                Phone Number: <input type="number" placeholder="Enter Your Mobile Number">
+                <br><br>
+                    <button class="bg-green-600 text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-2xl shadow-green-200 hover:bg-green-700 transition-all" href="./submit.html"> <a href="submit.html">Register Now</a></button>
+
+
+            </form>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+      <!-- Footer -->
+    <footer class="py-20 bg-white border-t border-slate-100">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-slate-400 text-sm mb-4 tracking-widest uppercase font-bold">Government of Gujarat</p>
+            <p class="text-slate-600 max-w-xl mx-auto mb-10">Building a sustainable future for 7.5 Crore citizens through clean energy and smart mobility.</p>
+            <div class="flex justify-center gap-8 text-slate-400 font-medium">
+                <a href="#" class="hover:text-green-600">Policy Document</a>
+                <a href="#" class="hover:text-green-600">Dealer Login</a>
+                <a href="#" class="hover:text-green-600">Contact Help</a>
+            </div>
+            <div class="mt-16 pt-10 border-t border-slate-100 text-slate-300 text-xs">
+                © 2026 Department of Transport, Government of Gujarat. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
